@@ -1,0 +1,60 @@
+body {
+  font-family: "Helvetica";
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav,  h1 {
+  background-color: whiteSmoke;
+  border-bottom: #ddd;
+}
+
+
+nav {
+  padding: 10px;
+  margin: 0px;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid whiteSmoke;
+  background-color: whiteSmoke;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+section div p, article, a {
+  margin: auto;
+  display: block;
+  padding: 3px;
+  text-align: center;
+}
+
+section div img {
+  margin: auto;
+  width: 100px;
+  display: block;
+  padding-bottom: 3px;
+}
+
+section div article {
+  font-weight: bold;
+}
+
+section div p {
+  color: #b5b5b5;
+}
+
+section div a{
+  text-decoration: none;
+  color: #b49b99;
+}

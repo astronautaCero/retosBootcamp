@@ -1,0 +1,36 @@
+body {
+  background-color: #edeff0;
+  font-family: "Helvetica";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body p {
+  color: #b2bac2;
+}
+
+section {
+  margin: 10px;
+}
+
+.cont {
+  background: white;
+  border-radius: 10px;
+  width: 700px;
+}
+
+h1 {
+  font-size: 28px;
+  color: ​#384047;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  color: ​#384047;
+  font-weight: bold;
+}
+
+.nn {
+  margin: 20px;
+}
