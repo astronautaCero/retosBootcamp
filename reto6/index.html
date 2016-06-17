@@ -7,18 +7,113 @@
     <title>Mis Finanzas</title>
   </head>
   <body>
-    <div class="navbar navbar-inverse">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">mis<strong>finanzas</strong></a>
+      <header>
+        <nav>
+          <div class="navbar navbar-inverse">
+
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">mis<strong>finanzas</strong></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class=""><a href="#"><span class="glyphicon glyphicon-dashboard aria-hidden="true"></span>Resumen</a></li>
+              <li class="active"><a href="#"> <span class="glyphicon glyphicon-th-list"></span>  Transacciones</a></li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="row">
+              <div class="col-md-3">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="search for" />
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="list-group">
+
+                </div>
+                <div class="list-group">
+                  <a href="" class="list-group-item">Ingresos</a>
+                  <a href="" class="list-group-item">Gastos</a>
+                </div>
+
+                <div class="list-group">
+                  <a href="" class="list-group-item">Restaurantes</a>
+                  <a href="" class="list-group-item">Hogar</a>
+                  <a href="" class="list-group-item">Diversión</a>
+                  <a href="" class="list-group-item">Viajes</a>
+                  <a href="" class="list-group-item">Carro</a>
+                </div>
+              </div>
+
+              <div class="col-md-9">
+                <p>
+                  <button type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-plus"></span>Nueva Transacción</button>
+                </p>
+
+                  <br />
+                  <table class="table table-condensed">
+                    <tr>
+                      <th class="col-md-1"><h3><small>Ago</small><br />26</h3></th>
+
+                      <th class="col-md-9"><h3><small>Gasto <span class="label label-info">Hogar</span></small><br />Arriendo</h3></th>
+
+                      <td class="col-md-1"><h3><small>900,000</small><br /><small><a href="#">Editar</a></small><small><a href="#">Eliminar</a></small></h3></td>
+                    </tr>
+                    <tr>
+
+                      <th class="col-md-1"><h3><small>Ago</small><br />25</h3></th>
+
+                      <th class="col-md-11"><h3><small>Gasto <span class="label label-info">Restaurante</span></small><br />El Rincón de mi tierra</h3></th>
+                    </tr>
+                    <tr>
+                      <th class="col-md-1"><h3><small>Ago</small><br />24</h3></th>
+
+                      <th class="col-md-11"><h3><small>Ingreso </small><br />Salario</h3></th>
+                    </tr>
+
+                  </table>
+
+                  <br />
+                  <hr />
+
+                    <h3><small>Ago  Gasto <span class="label label-info">Hogar</span></small><br />26 Arriendo</h3>
+
+                  <hr />
+
+                    <h3><small>Ago Gasto <span class="label label-info">Restaurante</span></small><br />25 El Ricón de mi tierra</h3>
+
+                  <hr />
+
+                    <h3><small>Ago Ingreso</small><br />24 Salario</h3>
+
+              </div>
+
+
+        </div>
       </div>
-      <ul class="nav navbar-nav">
-        <li class=""><a href="#"><span class="glyphicon glyphicon-dashboard aria-hidden="true"></span>Resumen</a></li>
-        <li class="active"><a href="#">Transacciones</a></li>
-      </ul>
-    </div>
 
 
 
+
+    <script>
+      var carro = {
+        modelo: [2016,2017],
+        tipo: {
+          tipo_carro:50,
+          tipo_auto:25
+        },
+        modelo: "2016"
+      }
+      console.log(carro.tipo.tipo_auto)
+    </script>
 
 
 
