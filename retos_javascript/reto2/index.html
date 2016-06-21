@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reto2 Javascript</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var mult = 1000;
+
+    var num1 = 3;
+    var num2 = 5;
+    var suma = 0;
+
+
+    for (var i= 0; i <= mult;i++)
+    {
+      //console.log(i);
+      var resto = i%num1;
+      var resto2 = i%num2;
+
+      suma = suma + i;
+       console.log(suma);
+
+
+
+
+      if (resto===0) {
+
+        //var acu = acu + resto;
+        //document.write('la suma de los multiplos de 3 es:' + acu);
+
+        document.write("multiplos del 3 es: " + i + '<br>');
+
+      }
+
+
+
+
+    }
+  </script>
+
+</body>
+</html>
