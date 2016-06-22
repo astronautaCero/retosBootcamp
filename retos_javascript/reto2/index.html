@@ -15,29 +15,15 @@
 
     for (var i= 0; i <= mult;i++)
     {
-      //console.log(i);
-      var resto = i%num1;
-      var resto2 = i%num2;
 
-      suma = suma + i;
-       console.log(suma);
+      if (i%num1==0 || i%num2==0) {
 
+        suma = suma+i;
 
-
-
-      if (resto===0) {
-
-        //var acu = acu + resto;
-        //document.write('la suma de los multiplos de 3 es:' + acu);
-
-        document.write("multiplos del 3 es: " + i + '<br>');
-
+        //document.write("multiplos del 3 es: " + i + '<br>');
       }
-
-
-
-
     }
+    document.write('la suma de los multiplos de 3 && 5 es:' + suma);
   </script>
 
 </body>
