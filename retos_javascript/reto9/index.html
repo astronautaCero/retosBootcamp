@@ -9,19 +9,18 @@
 
 <script type="text/javascript">
 
-
-
-  var i;
-  var x = [];
+  var array = [];
   var y;
 
-  function multiplier(x,y){
-    for (var i = 0; i <= x.length; i++) {
-      x[i]= x[i] * y;
+  function multiplier(array,y){
+    for (var i = 0; i < array.length; i++) {
+      array[i] = array[i] * y;
     }
+      return (array);
   }
 
   console.log(multiplier([1,2,3],3));
+
 </script>
 </body>
 </html>
