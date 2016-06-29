@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <title>JS Bin</title>
     <style>
@@ -19,20 +19,25 @@
 </head>
 
 <body>
-<div style="background-color:red;"></div>
+<div  style="background-color:red;"></div>
 <div style="background-color:rgb(16,99,30);"></div>
-<div style="background-color:#523456;"></div>
+<div  style="background-color:#523456;"></div>
 <div style="background-color:#a11;"></div>
-  <p></p>
+  <p id="resul"></p>
 
 
   <script type="text/javascript">
+  //var nn = alert('el color es rojo');
 
-  $(document).ready(
-    $('div').on('click', 'div', function() {
-      var agregar = $(this).append("<p>color rojo</p>")
+  $(function(){
+    $('div').click(function(){
+      var color = $(this).css( "background-color" );
+                  $('#resul').html( "Este div es  <span style='color:" +
+      color + ";'>" + color + "</span>.");
+
     })
-  );
+
+  })
 
 
   </script>
