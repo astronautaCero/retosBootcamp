@@ -6,28 +6,35 @@
     <title>API - Flickr</title>
   </head>
   <body>
+    <div id="title"></div>
     <div id="img"></div>
 
     <script type="text/javascript">
+    (function(){
       var url = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
-      $.getJSON(url, 
+      $.getJSON(url,
       {
         tags: "mount rainier",
         tagmode: "any",
         format: "json"
       }).done(function(data){
+
         $.each(data.items, function(i, item) {
+          $('<h2>').text(item.title).appendTo('#title');
           $('<img>').attr('src', item.media.m).appendTo('#img');
+
           if (i === 4) {
             return false;
           }
         });
-      })
+      });
+    })();
 
-       
-      
+
+
 
     </script>
+    <h1></h1>
   </body>
 </html>
