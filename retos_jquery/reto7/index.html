@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script
+        src="https://code.jquery.com/jquery-3.0.0.min.js"
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous"></script>
+    <title>.change() jQuery</title>
+    <title>preventDefault</title>
+  </head>
+  <body>
+      <a id="mysql" href="http://www.w3resource.com/mysql/mysql-tutorials.php">MySQL Tutorial</a>
+      <a id="sqlite" href="http://www.w3resource.com/sqlite/">SQLite Tutorial</a>
+
+      <script type="text/javascript">
+        $(function() {
+
+          $("#mysql").click(function(e){
+            e.preventDefault();
+          })
+        })
+      </script>
+  </body>
+</html>
