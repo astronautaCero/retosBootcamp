@@ -1,5 +1,6 @@
 class Song
-
+  attr_reader :nombre
+  attr_writer :duracion
   def initialize(nombre, duracion, artista)
     @nombre = nombre
     @duracion = duracion
@@ -25,11 +26,16 @@ class Le < Song
 end
 
 
-#d = Song.new("bru", "3:40", "nn")
-#p d.inspect
+
+d = Song.new("bru", "3:40", "nn")
+p d.inspect
+
+p d.nombre
+p d.duracion = "4:20"
+p d.inspect
 #p d.to_s
 
-x = Le.new("bru", "3:40", "nn", "oh gloria")
+#x = Le.new("bru", "3:40", "nn", "oh gloria")
 
-p x.inspect
-p x.to_s
+#p x.inspect
+#p x.to_s
