@@ -37,7 +37,11 @@ class All
       puts "El modulo de los numeros #{@num1} y #{@num2} es: #{mod} "
     end
 
+
+
 end
+
+
 
 
 

@@ -7,7 +7,7 @@ class Song
         @artist = artist
         @duracion = duracion
     end
-    
+
     def play
         @@plays += 1
         "This song has plays: #{@@plays}"
@@ -19,5 +19,5 @@ class Song
 end
 
 
-x = Song.new("nn", "nn", 40)
+x = Song.new("nn", "nn", 70)
 p Song.larga(x)
