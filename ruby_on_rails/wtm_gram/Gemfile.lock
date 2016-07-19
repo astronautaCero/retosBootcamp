@@ -39,6 +39,11 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.0.0)
+    autoprefixer-rails (6.3.7)
+      execjs
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (9.0.5)
     coffee-rails (4.2.1)
@@ -82,7 +87,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
-    puma (3.4.0)
+    puma (3.5.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -155,6 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -162,7 +168,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0)
-  sass-rails (~> 5.0)
+  sass-rails (>= 3.2)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
